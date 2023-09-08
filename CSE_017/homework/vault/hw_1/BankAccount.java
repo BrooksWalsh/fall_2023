@@ -31,19 +31,38 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
-    // getters/setters
+    /**
+     * Getter method for account number data member
+     * 
+     * @return long accountNumber
+     */
     public long getNumber() {
         return number;
     }
 
+    /**
+     * Getter method for account balance data member
+     * 
+     * @return double accountBalance
+     */
     public double getBalance() {
         return balance;
     }
 
+    /**
+     * Getter method for the account owner data member
+     * 
+     * @return String accountOwner
+     */
     public String getOwner() {
         return owner;
     }
 
+    /**
+     * Setter method for the account number data member
+     * 
+     * @param number
+     */
     public void setNumber(long number) {
         this.number = number;
     }

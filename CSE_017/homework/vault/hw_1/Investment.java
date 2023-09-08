@@ -27,11 +27,20 @@ public class Investment extends BankAccount {
         this.type = type;
     }
 
-    // setters/getters
+    /**
+     * Getter method for investment type data member.
+     * 
+     * @return String investmentType
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * Setter method for investment type data member
+     * 
+     * @param type
+     */
     public void setType(String type) {
         this.type = type;
     }

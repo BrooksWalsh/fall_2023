@@ -27,11 +27,20 @@ public class Savings extends BankAccount {
         this.yearlyInterestRate = yearlyInterestRate;
     }
 
-    // getters/setters
+    /**
+     * Getter method for yearlyInterestRate data member
+     * 
+     * @return double yearlyInterestRate
+     */
     public double getYearlyInterestRate() {
         return yearlyInterestRate;
     }
 
+    /**
+     * Setter method for yearlyInterestRate data member
+     * 
+     * @param yearlyInterestRate
+     */
     public void setYearlyInterestRate(double yearlyInterestRate) {
         this.yearlyInterestRate = yearlyInterestRate;
     }
