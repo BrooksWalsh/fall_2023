@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Autograding",
+      "setup": "",
+      "run": "bash run_tests.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}

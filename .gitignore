@@ -1,6 +1,6 @@
 # Additions
 *.DS_Store
-CSE_017/*.git
+/CSE_017/homework/repos
 
 # Compiled class file
 *.class

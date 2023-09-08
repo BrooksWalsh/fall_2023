@@ -1,0 +1,45 @@
+Type            Number          Owner                           Balance         Interest/Type
+Checking        6754917864      William Burst                   $10000.00  
+Savings         7070611070      Lara Stevens                    $75000.00       9.25 
+Checking        9512559591      Nathan Steward                  $24900.90  
+Investment      9269543890      Tracey Bold                     $19000.00       Property  
+Savings         4715004908      Isabel Truman                   $89250.00       10.50
+Savings         3037853819      Andrew Sullivan                 $12734.00       12.10
+Investment      1378190104      Abigail Clark                   $11255.00       Shares    
+Checking        8039310269      George Duck                     $29990.00  
+Savings         7024987212      Emma Stevens                    $31250.00       8.89 
+Investment      5792112384      Lily Daves                      $8800.00        Growth
+
+Account found: Savings          4715004908      Isabel Truman                   $89250.00       10.50
+Account not found.
+Type            Number          Owner                           Balance         Interest/Type
+Investment      1378190104      Abigail Clark                   $11255.00       Shares    
+Savings         3037853819      Andrew Sullivan                 $12734.00       12.10
+Savings         4715004908      Isabel Truman                   $89250.00       10.50
+Investment      5792112384      Lily Daves                      $8800.00        Growth    
+Checking        6754917864      William Burst                   $10000.00  
+Savings         7024987212      Emma Stevens                    $31250.00       8.89 
+Savings         7070611070      Lara Stevens                    $75000.00       9.25 
+Checking        8039310269      George Duck                     $29990.00  
+Investment      9269543890      Tracey Bold                     $19000.00       Property  
+Checking        9512559591      Nathan Steward                  $24900.90
+
+Type            Number          Owner                           Balance         Interest/Type
+Investment      5792112384      Lily Daves                      $8800.00        Growth    
+Checking        6754917864      William Burst                   $10000.00  
+Investment      1378190104      Abigail Clark                   $11255.00       Shares    
+Savings         3037853819      Andrew Sullivan                 $12734.00       12.10
+Investment      9269543890      Tracey Bold                     $19000.00       Property  
+Checking        9512559591      Nathan Steward                  $24900.90  
+Checking        8039310269      George Duck                     $29990.00  
+Savings         7024987212      Emma Stevens                    $31250.00       8.89 
+Savings         7070611070      Lara Stevens                    $75000.00       9.25 
+Savings         4715004908      Isabel Truman                   $89250.00       10.50
+
+Withdrawal failed. The available balance: $8800.00
+Withdrawal Successful. The new balance: $7800.00
+Deposit Successful. The new balance: $11000.00
+Monthly interest = $780.94. The new balance: $90030.94
+Cannot get the monthly interest. Not a savings account.
+Profit = $562.75. The new balance: $11817.75
+Cannot get the profit/loss. Not an investment account.
