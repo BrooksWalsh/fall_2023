@@ -1,5 +1,6 @@
 # Additions
 *.DS_Store
+CSE_017/*.git
 
 # Compiled class file
 *.class
