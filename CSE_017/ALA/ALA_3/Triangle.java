@@ -66,8 +66,8 @@ public class Triangle extends Shape {
      * Uses area of a triangle formula to return the area of the Triangle object
      */
     public double getArea() {
-        double p = (side1 + side2 + side3) / 2;
-        return Math.sqrt(p * (p - side1) * (p - side2) * (p * side3));
+        double p = (side1 + side2 + side3) / 2.0;
+        return Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
     }
 
     /**

@@ -26,6 +26,7 @@ public class TestShapes {
         System.out.println("\nSorted list");
         java.util.Arrays.sort(shapes);
         printShapes(shapes);
+        System.out.println(String.format("\n\nAverage Perimeter = %.2f", getAveragePerimeter(shapes)));
     }
 
     /**
@@ -38,5 +39,20 @@ public class TestShapes {
         for (Shape s : list) {
             System.out.println(s);
         }
+    }
+
+    /**
+     * Returns the average of the perimeters of the Shape objects
+     * 
+     * @param list
+     * @return
+     */
+    public static double getAveragePerimeter(Shape[] list) {
+        double perimeterTotal = 0;
+        int i = 0;
+        for (i = 0; i < list.length; i++) {
+            perimeterTotal += list[i].getPerimeter();
+        }
+        return perimeterTotal / i;
     }
 }
