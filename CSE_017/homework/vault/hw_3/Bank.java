@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @version Java 11 / VSCode
  * @author Brooks Walsh
  */
-public class Bank {
+public class Bank implements Closeable {
 
     // data members
     private BankAccount[] accounts;
