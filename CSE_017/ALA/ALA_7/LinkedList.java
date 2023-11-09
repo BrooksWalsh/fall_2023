@@ -241,8 +241,14 @@ public class LinkedList<E> {
         }
     }
 
-    // contains method
     // Time Complexity: O(n)
+    /**
+     * Contains method returns true if this LinkedList contains the object passed as
+     * an argument, else returns false.
+     * 
+     * @param o
+     * @return
+     */
     public boolean contains(Object o) {
         Iterator<E> iter = iterator();
         containsIterations = 0;
@@ -256,8 +262,15 @@ public class LinkedList<E> {
         return false;
     }
 
-    // remove method
     // Time Complexity: O(n)
+    /**
+     * Remove method for LinkedLists works by setting the node.next on the previous
+     * to the removed node to the node.next of the removed node. Also deals with
+     * some edge cases. Returns true if the element is found and removed.
+     * 
+     * @param o
+     * @return
+     */
     public boolean remove(Object o) {
         Node current = head;
         Node previous = null;
@@ -280,8 +293,16 @@ public class LinkedList<E> {
         return true;
     }
 
-    // add(index) method
     // Time Complexity: O(n)
+    /**
+     * Add(index, item) method for a LinkedList works by iterating through the
+     * LinkedList to "simulate" having an index. Returns true in all cases because
+     * we do not deal with memory in this class.
+     * 
+     * @param index
+     * @param item
+     * @return
+     */
     public boolean add(int index, E item) {
         if (index < 0 || index > size) {
             throw new ArrayIndexOutOfBoundsException();

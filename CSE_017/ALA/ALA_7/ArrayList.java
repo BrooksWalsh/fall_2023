@@ -135,7 +135,7 @@ public class ArrayList<E> {
    */
   public boolean remove(int index) {
     checkIndex(index);
-    for (int i = index; i < size - 1; i++)  {
+    for (int i = index; i < size - 1; i++) {
       removeIterations++;
       elements[i] = elements[i + 1];
     }
@@ -236,8 +236,14 @@ public class ArrayList<E> {
     }
   }
 
-  // contains method
   // Time Complexity: O(n)
+  /**
+   * Contains method returns true if this ArrayList contains the object passed as
+   * an argument, else returns false.
+   * 
+   * @param o
+   * @return
+   */
   public boolean contains(Object o) {
     containsIterations = 0;
     Iterator<E> iter = iterator();
@@ -251,8 +257,15 @@ public class ArrayList<E> {
     return false;
   }
 
-  // remove method
   // Time Complexity: O(n)
+  /**
+   * Remove method searches for the object passed as the argument and removes it
+   * using the remove(index) method that shifts elements. Returns true if the
+   * element is removed.
+   * 
+   * @param o
+   * @return
+   */
   public boolean remove(Object o) {
     removeIterations = 0;
     for (int i = 0; i < size; i++) {
