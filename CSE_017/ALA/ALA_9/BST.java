@@ -5,6 +5,9 @@ public class BST<E extends Comparable<E>> {
     // static counter data members
     public static int containsIterations, addIterations, removeIterations;
 
+    /**
+     * Inner-class defines Tree Nodes that represent data elements.
+     */
     private class TreeNode {
         E value;
         TreeNode left;
@@ -16,25 +19,48 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
+    /**
+     * No-arg constructor of the BST class.
+     */
     public BST() {
         root = null;
         size = 0;
     }
 
+    /**
+     * Getter method for the size of the BST.
+     * 
+     * @return int
+     */
     public int size() {
         return size;
     }
 
+    /**
+     * Returns true if the BST is empty, else otherwise.
+     * 
+     * @return boolean
+     */
     public boolean isEmpty() {
         return (size == 0);
     }
 
+    /**
+     * Clears the BST by resetting the root to null and size to 0.
+     */
     public void clear() {
         root = null;
         size = 0;
     }
 
-    // Search Method
+    /**
+     * Returns true if the value passed as an argument is within the BST.
+     * 
+     * @param value
+     * @return
+     */
+    // Unsorted Time Complexity: O(nLog(n))
+    // Sorted Time Complexity: O(n)
     public boolean contains(E value) {
         containsIterations = 0;
         if (root == null) {
@@ -53,7 +79,14 @@ public class BST<E extends Comparable<E>> {
         return false;
     }
 
-    // Insertion Method
+    /**
+     * Adds an element into the BST and re-structures to retain it's balance.
+     * 
+     * @param value
+     * @return boolean
+     */
+    // Unsorted Time Complexity: O(nLog(n))
+    // Sorted Time Complexity: O(n)
     public boolean add(E value) {
         addIterations = 0;
         if (root == null)
@@ -81,7 +114,14 @@ public class BST<E extends Comparable<E>> {
         return true;
     }
 
-    // Removal Method
+    /**
+     * Removes an element from the BST and re-structures to retain it's balance.
+     * 
+     * @param value
+     * @return
+     */
+    // Unsorted Time Complexity: O(nLog(n))
+    // Sorted Time Complexity: O(n)
     public boolean remove(E value) {
         removeIterations = 0;
         TreeNode parent, node;
@@ -150,11 +190,19 @@ public class BST<E extends Comparable<E>> {
         return true;
     }
 
-    // Recursive Inorder Traversal Method
+    /**
+     * Prints the values of the BST in the following order:
+     * - Left, Value, Right
+     */
     public void inorder() {
         inorder(root);
     }
 
+    /**
+     * Helper method of inorder printing.
+     * 
+     * @param node
+     */
     private void inorder(TreeNode node) {
         if (node != null) {
             inorder(node.left);
@@ -163,11 +211,19 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
-    // Recursive Preorder Traversal Method
+    /**
+     * Prints the values of the BST in the following order:
+     * - Value, Left, Right
+     */
     public void preorder() {
         preorder(root);
     }
 
+    /**
+     * Helper method of preorder printing.
+     * 
+     * @param node
+     */
     private void preorder(TreeNode node) {
         if (node != null) {
             System.out.print(node.value + " ");
@@ -176,11 +232,19 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
-    // Recursive Postorder Traversal Method
+    /**
+     * Prints the values of the BST in the following order:
+     * - Left, Right, Value
+     */
     public void postorder() {
         postorder(root);
     }
 
+    /**
+     * Helper method of postorder printing.
+     * 
+     * @param node
+     */
     private void postorder(TreeNode node) {
         if (node != null) {
             postorder(node.left);
