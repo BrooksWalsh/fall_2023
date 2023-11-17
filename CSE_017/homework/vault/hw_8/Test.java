@@ -28,14 +28,11 @@ import java.io.FileNotFoundException;
  *      - LinkedList: 5781, 5796, 5738 iterations
  *  - Discussion of Difference: (on average: predicted 1288 iterations less than reality)
  *      - The difference between the reality and the theory always shows theory predicting a lower
- *        amount of iterations compared to reality. This can be explained by the unstable nature
- *        of the HeapSort algorithm, as the ordering of the list before it is sorted can change
- *        the structure of the tree and therefore the time complexity of the sort. The odds that
- *        a randomly inserted selection of data will create a balanced tree is near zero, so the
- *        realistic time complexity of the HeapSort algorithm is likely a bit higher that nLog(n).
- *      - One final point to make is that the difference between the various results found when
- *        checking the actual amount of iterations is caused by the different tree structures
- *        created for the heap when different ordering was used.
+ *        amount of iterations compared to reality. This can be explained by several factors ranging
+ *        from implementation inefficiencies to the way that we chose to measure iterations. Perhaps
+ *        most importantly, big-O notation abstracts a lot of detail away from the calculation of the
+ *        theoretical time complexity. This way, it is much easier for us to quickly understand and
+ *        compare, but also it is not quite as specific.
  */
 
 /**
