@@ -41,6 +41,7 @@ public class HashMap<K, V> {
 	 * @param c  the capacity of the hashtable
 	 * @param lf the load factor for the hashtable
 	 */
+	@SuppressWarnings("unchecked")
 	public HashMap(int c, double lf) {
 		hashTable = new LinkedList[trimToPowerOf2(c)];
 		loadFactor = lf;
@@ -193,6 +194,7 @@ public class HashMap<K, V> {
 	/**
 	 * Method to rehash the hashtable
 	 */
+	@SuppressWarnings("unchecked")
 	private void rehash() {
 		ArrayList<HashMapEntry<K, V>> list = toList();
 		hashTable = new LinkedList[hashTable.length << 1]; // double the length of hashtable
@@ -241,6 +243,12 @@ public class HashMap<K, V> {
 		return out;
 	}
 
+	/**
+	 * Returns the largest number of collisions that happened when created the
+	 * current HashMap.
+	 * 
+	 * @return int
+	 */
 	public int collisions() {
 		int max = 0;
 		for (int i = 0; i < hashTable.length; i++) {
