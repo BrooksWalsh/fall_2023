@@ -1,6 +1,7 @@
 # Additions
 *.DS_Store
 /CSE_017/homework/repos
+/CSE_017/*.csv
 
 # Compiled class file
 *.class
