@@ -1,0 +1,10 @@
+B&B Bike&Barre 45 100.0 I125991
+BC Boot_Campo 30 180.0 I149232
+CF1 Cardiac_Fitness_Level_1 45 130.0 I122524
+CF2 Cardiac_Fitness_Level_2 90 250.0 I105225
+CS Core_Synergy 60 100.0 I126381
+C Cycling 60 110.0 I149914
+GY General_Yoga 30 85.0 I128897
+AY Advanced_Yoga 90 200.0 I127970
+T Tabata 45 100.0 I174571
+Z Zumba 60 120.0 I141774
